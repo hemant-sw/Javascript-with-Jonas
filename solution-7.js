@@ -1,4 +1,4 @@
-`use-strict`;
+`use-strict`
 
 /*Coding Challenge #7
 Let's go back to Mark and John comparing their BMIs! This time, let's use objects to 
@@ -15,36 +15,35 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m 
 tall*/
 
+
 //---------------Solution--------------
 
 const mark = {
-  fullName: "Mark Smith",
-  Weight: 78,
-  Height: 1.69,
-  calcBMI: function () {
-    return this.Weight / (this.Height * this.Height);
-  },
-};
+    fullName: 'Mark Smith',
+    Weight: 78,
+    Height: 1.69,
+    calcBMI : function () {
+        return this.Weight/(this.Height*this.Height);
+
+    }
+}
 
 const john = {
-  fullName: "John Miller",
-  Weight: 92,
-  Height: 1.95,
-  calcBMI: function () {
-    return this.Weight / (this.Height * this.Height);
-  },
-};
+    fullName: 'John Miller',
+    Weight: 92,
+    Height: 1.95,
+    calcBMI : function () {
+        return this.Weight/(this.Height*this.Height);
+
+    }
+}
 
 if (mark.calcBMI() > john.calcBMI()) {
-  console.log(
-    `${mark.fullName}'s BMI(${mark.calcBMI()}) is higher than ${
-      john.fullName
-    }'s (${john.calcBMI()})`
-  );
-} else {
-  console.log(
-    `${john.fullName}'s BMI(${john.calcBMI()}) is higher than ${
-      mark.fullName
-    }'s (${mark.calcBMI()})`
-  );
+    console.log(`${mark.fullName}'s BMI(${mark.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`);
+
+}
+
+else {
+    console.log(`${john.fullName}'s BMI(${john.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`);
+
 }
