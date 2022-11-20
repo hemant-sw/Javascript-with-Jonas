@@ -1,0 +1,156 @@
+* Always use const over let and var.
+
+* Use Template literals (`hey Hemant`) because it is better than concatenation("hey" + " " + Hemant).
+
+* In type conversion we will have to convert number to string by using string(50)  or string to number also possible.
+         * In type coesion '2'+2 =22 (because + here is concatination)
+         * but for '6'-3 = 3 (type coercion automatically change it to number and then executed). 
+
+* There are five falsy values in js --> ( 0,'',undefined,null,Nan)
+
+
+* There are two equality  operator ('==' , '===')
+         * '==' is Losse equality operator means it can equalise string number with number if the are equal.
+         *  '===' is Strict equality operator means it will only true if the both values are of same data type.
+
+* Use ternary operator for small block of code for quick decision
+                 
+         * In this just only need to type{  
+                                           const age = 17;
+
+
+                                           const work = age>=18 ? 'Drink juice':'drink water';
+
+                                           console.log(`I would like to  ${work}`); 
+                                           }
+         * It will reduce line of code and with these we can also able to use statement in ternary operator .
+         * But it can't be use for large block of code for that we will use template literals.
+
+* There are 3 types of function in Javascript -
+                                                * Function declaration.
+                                                ----> function fruitjuice(appple , mango){
+                                                      const juice = `There will be ${appple} apple and ${mango} mango juice to be made`
+                                                      return juice;
+                                                      }
+
+                                                      const order1 = fruitjuice(5,8);
+                                                       console.log(order1);
+
+                                                * Function expression.
+                                                ----> const calcAge = function (bierthyaer) {
+                                                      return 2022-bierthyaer;
+                                                      }
+
+                                                      console.log(calcAge(1999));
+                                                * Arrow Function.
+                                                -----> const calcAge2 =(bierthyaer) => 2035-bierthyaer;
+
+                                                       console.log(calcAge2(1999));
+
+* Arrays in JAVA script =
+                         * To add element in last position of array use arrayName.push('hemant');
+                         * To add element in first position of array use arrayName.upshift('hemant');
+                         * To Remove element from last position of array use arrayName.pop();
+                         * To Remove element from first position of array use arrayName.shift();
+                         * To get address of ude arrayName.indexOf('arrayElement');
+                         * If index is not there it will output -1 .
+                         * Use arrayName.includes('arrayElement');
+                         * If array present in the list then it wil output Boolean value.
+
+* Objects in Javascript = 
+                         * It is same as Arrays but in array we need to write its address 
+                         * But in objects we can acces data by input key .
+                         * const hemant = {
+                                            firstName: 'hemant',
+                                            lastName: 'sharma',
+                                            work:'student',
+                                            home:'sonbhdra'
+                                          }
+                         * We can cansole data by . (dot) or [] ( Bracket Notation ).
+                                           * console.log(hemant.firstName);
+                                           * console.log(hemant['lastName']);
+
+
+
+<-------------------------------------------------Introduction section ended------------------------------------------->
+
+
+* DOM (Document  Object Model)
+
+* DOM is not part of Javascript because DOM related stuff is not in Javascript.
+
+* DOM are the web API used by browser 
+
+* To target a class in Javascript use -- document.querySelector('.classname');.
+
+* To target all classes of same className use -- document.querySelectorAll('.classname');
+
+* To get text content of the classe use -- document.querySelector('.classname').textContent);
+
+* To change the text coontent of class use -- document.querySeletor('.classname').textContent = 13));
+
+* document.addEventListner('click',anyFunction); use to get mouse input 
+
+* document.addEventListner('key',anyFunction); use to get keyboard key input 
+
+
+HOW JAVASCRIPT WORKS BEHIND =>
+
+* Scoping asks the questions "where do variables live? or from where thry are accessible.
+
+* There are 3 types of scope in JavaScript 1-global scope ,2-scopes defined by functions(local variable)
+  3- Scopes defined by blocks.
+
+* Only let and const variables are blocked scoped .variables declared with var end up in closest functions scope.
+
+* In Javascript, we have lexial scoping , so the rules of whrer we can access variable are based on exactly where in the code functions and blocks are written.
+
+* Every scope always has acess to all the variables from all its outer scopes this is the chain scope.
+
+* When variables is not in the current scopes , the engine looks up in the scope chain until find the variable it's looking for this is called variables lookup;
+
+* The scope chain is a one-way street; a scope will never ever have access to the variables of the inner space;
+
+* The scope chain in the certain scope is the equal to adding together all the variables environments of the all parents scope
+
+* The scopes chain has nothing to do with the order in which functions wewe called it does not affects the scope chain at all;
+
+
+DATA STRUCTURE ---------->>
+
+* Spread operator is used get all elments of an objects.
+
+* Short circuiting of OR return first truthy values.
+
+* Short circuiting of AND return If any value is false then output will be false.
+
+* For of Loop will return value of all elements present in objects 
+
+
+
+
+-----------------------------
+
+Function ------=>
+
+* Functions => function are a data type just as strings, numbers, and arrays are data types.
+  functions can be assigned as values to variables, but are different from all other data types because they can be invoked
+  (The code inside a function is not executed when the function is defined.).
+
+* Callback Functions =>  A callback function is a function that is passed into another function as an argument.
+  This function can then be invoked during the execution of that higher order function (that it is an argument of).
+  Since, in JavaScript, functions are objects, functions can be passed as arguments.
+
+* Higher-Order Functions =>  functions can be assigned to variables in the same way that strings or arrays can.
+  They can be passed into other functions as parameters or returned from them as well.
+  A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+
+ 
+
+  
+
+
+
+  
+                         
+                                             
